@@ -57,7 +57,6 @@ const App = () => {
 
   //Signup
   const submitSignup = (user, email, pass) => {
-    
   }
 
   const readCookie = async () => {
