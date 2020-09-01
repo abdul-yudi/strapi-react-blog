@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_page_textareas",
+  "info": {
+    "name": "Textarea",
+    "icon": "pencil-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

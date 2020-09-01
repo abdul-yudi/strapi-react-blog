@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_page_parallax_image_texts",
+  "info": {
+    "name": "Parallax Image Text",
+    "icon": "chess-board"
+  },
+  "options": {},
+  "attributes": {
+    "Background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Text": {
+      "type": "string"
+    }
+  }
+}

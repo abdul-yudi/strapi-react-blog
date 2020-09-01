@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_sliders",
+  "info": {
+    "name": "Slider",
+    "icon": "ellipsis-h"
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

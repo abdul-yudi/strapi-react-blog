@@ -56,6 +56,16 @@
     "posts": {
       "collection": "post",
       "via": "user"
+    },
+    "Birth": {
+      "type": "date"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
     }
   }
 }
