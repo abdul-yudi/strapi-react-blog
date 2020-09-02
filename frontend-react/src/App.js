@@ -118,8 +118,15 @@ const App = () => {
 
       <div className="container">
         <Router>
-          <Link to="/home">Home</Link> | &nbsp;
-          {state.isAuthenticated ? <a href="#" onClick={submitLogOut}>Sign out</a> : null}
+          <Link to="/home">Home</Link>
+          {state.isAuthenticated ? (
+            <>
+              {" "}
+              <a href="#" onClick={submitLogOut}>Sign out</a>
+            </>
+            )
+            : null
+          }
 
           <Suspense fallback={
             <div className="loading">
