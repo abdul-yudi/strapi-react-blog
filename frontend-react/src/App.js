@@ -114,11 +114,11 @@ const App = () => {
 
   return (
     <Context.Provider value={{state, dispatch}}>
-      <SEO title={state.isAuthenticated ? `Hello ${state.user.username}` : "Hello guest"}/>
+      <SEO title={state.isAuthenticated ? `Hello ${state.user.username}` : "Hello guest"} />
 
       <div className="container">
         <Router>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
           {state.isAuthenticated ? (
             <>
               {" "}
