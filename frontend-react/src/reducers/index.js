@@ -45,8 +45,9 @@ const reducer = (state, action) => {
           "email": useremail 
         }
       }
-    case "LOGOUT":
-      Cookies.clear();
+    case "LOG OUT":
+      Cookies.remove("token");
+      localStorage.clear();
       return {
         ...state,
         "isAuthenticated": false,
