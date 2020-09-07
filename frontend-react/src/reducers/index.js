@@ -33,7 +33,6 @@ const reducer = (state, action) => {
         "user": action.payload.user
       };
     case "CHECKTOKEN":
-      console.log(state)
       const username = localStorage.getItem("username");
       const useremail = localStorage.getItem("useremail");
 
@@ -48,9 +47,11 @@ const reducer = (state, action) => {
     case "LOG OUT":
       Cookies.remove("token");
       localStorage.clear();
+      console.log('logiut')
+
       return {
         ...state,
-        "isAuthenticated": false,
+        "isAuthenticated": false
       };
     default:
       return state;

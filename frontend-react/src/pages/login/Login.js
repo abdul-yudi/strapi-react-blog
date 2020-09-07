@@ -11,8 +11,6 @@ const Login = (props) => {
 		handleSignup
 	} = props;
 
-	console.log(handleLogin)
-
   const [data, setData] = useState({
   	"userName": null,
   	"email": null,

@@ -11,6 +11,7 @@ import {
   Route,
   Link,
   Redirect,
+  useHistory
 } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
@@ -34,6 +35,8 @@ const LOGIN_API = "http://localhost:1337";
 const App = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  const history = useHistory();
 
   // Event Handlers
  
@@ -81,10 +84,15 @@ const App = () => {
     dispatch({
       type: "LOG OUT"
     });
+
+    if(!state.isAuthenticated){
+      history.Push('/login');
+    }
   }
 
   useEffect(() => {
     readCookie();
+
   }, [])
 
   const Routes = (routes) => {
